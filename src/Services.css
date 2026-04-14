@@ -1,0 +1,113 @@
+.services-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Reuse the same header style as About section */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #333;
+}
+
+.section-header h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #18d26e;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Desktop pe 2 columns */
+  gap: 30px;
+}
+
+.service-box {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.service-box:hover {
+  border-color: #18d26e; /* Hover pe border green */
+}
+
+.service-icon {
+  margin-right: 20px;
+}
+
+.service-icon i {
+  color: #18d26e;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.service-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.service-box .title a {
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.service-box:hover .title a {
+  color: #18d26e;
+}
+
+.service-box .description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 991px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Tablet aur mobile pe single column */
+  }
+}
+
+@media (max-width: 768px) {
+  .service-box {
+    padding: 20px;
+    flex-direction: column; /* Choti screen pe icon upar text niche */
+    text-align: center;
+  }
+  
+  .service-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}

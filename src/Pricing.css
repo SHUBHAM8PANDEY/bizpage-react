@@ -1,0 +1,152 @@
+.pricing-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pricing-item {
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.08);
+  flex: 1;
+  min-width: 300px;
+  max-width: 380px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+/* Featured / Business Plan Highlight */
+.pricing-item.featured {
+  border: 2px solid #18d26e;
+  transform: scale(1.08); /* Highlight effect */
+  z-index: 10;
+}
+
+.pricing-item h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.price-icon {
+  width: 80px;
+  height: 80px;
+  background: #18d26e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 0 10px rgba(24, 210, 110, 0.1);
+}
+
+.price-icon i {
+  color: #fff;
+  font-size: 32px;
+}
+
+.pricing-item h4 {
+  font-size: 48px;
+  color: #18d26e;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.pricing-item h4 sup {
+  font-size: 20px;
+  top: -15px;
+}
+
+.pricing-item h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing-item ul {
+  padding: 0;
+  list-style: none;
+  color: #444;
+  text-align: left;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.pricing-item ul li {
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-item ul i {
+  color: #18d26e;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.pricing-item ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.pricing-item ul .na i {
+  color: #ccc;
+}
+
+.buy-btn-wrapper {
+  margin-top: 20px;
+}
+
+.buy-btn {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 50px;
+  color: #18d26e;
+  border: 1px solid #18d26e;
+  transition: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #18d26e;
+  color: #fff;
+}
+
+/* Featured button hamesha green */
+.featured .buy-btn {
+  background: #18d26e;
+  color: #fff;
+}
+
+/* Responsive Fixes */
+@media (max-width: 991px) {
+  .pricing-item.featured {
+    transform: scale(1);
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,165 @@
+#footer {
+  background: #0c0c0c;
+  padding: 0 0 30px 0;
+  color: #eee;
+  font-size: 14px;
+}
+
+.footer-top {
+  background: #111;
+  padding: 60px 0 30px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer-info h3 {
+  font-size: 34px;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.footer-info p {
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #18d26e;
+}
+
+.footer-links h4, .footer-newsletter h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  padding: 8px 0;
+}
+
+.footer-links ul a {
+  color: #eee;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links ul a:hover {
+  color: #18d26e;
+}
+
+.footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+  display: flex;
+}
+
+.footer-newsletter input[type="email"] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 100px);
+  outline: none;
+}
+
+.footer-newsletter input[type="submit"] {
+  background: #18d26e;
+  border: 0;
+  width: 100px;
+  padding: 0 20px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.green-text {
+  color: #18d26e;
+}
+
+/* Scroll To Top Button */
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #18d26e;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  line-height: 0;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

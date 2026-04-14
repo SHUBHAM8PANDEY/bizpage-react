@@ -1,0 +1,103 @@
+.team-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.team-member {
+  flex: 0 0 calc(25% - 20px);
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.member-img {
+  position: relative;
+  line-height: 0;
+}
+
+.member-img img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+/* Hover Overlay logic */
+.member-info-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Shuru mein hidden */
+  transition: all 0.4s ease-in-out;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.team-member:hover .member-info-overlay {
+  opacity: 1; /* Hover pe dikhega */
+}
+
+.team-member:hover .member-img img {
+  transform: scale(1.1); /* Zoom effect */
+}
+
+.member-info-overlay h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.member-info-overlay span {
+  font-style: italic;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #18d26e; /* Hover on icon turns green */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991px) {
+  .team-member {
+    flex: 0 0 calc(50% - 15px);
+  }
+}
+
+@media (max-width: 575px) {
+  .team-member {
+    flex: 0 0 100%;
+  }
+}

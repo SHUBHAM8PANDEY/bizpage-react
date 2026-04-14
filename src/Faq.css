@@ -1,0 +1,87 @@
+.faq-section {
+  padding: 80px 0;
+  background: #f7f7f7;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Desktop pe 2 columns */
+  gap: 20px;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.faq-question {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  transition: 0.3s;
+}
+
+.faq-question:hover {
+  color: #18d26e;
+}
+
+.faq-question i {
+  font-size: 14px;
+  color: #999;
+  transition: 0.3s;
+}
+
+.active .faq-question {
+  color: #18d26e;
+}
+
+.active .faq-question i {
+  color: #18d26e;
+}
+
+/* Accordion Answer Logic */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+}
+
+.active .faq-answer {
+  max-height: 200px; /* Text ke hisab se adjust hoga */
+  padding: 10px 20px 20px 20px;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 991px) {
+  .faq-list {
+    grid-template-columns: 1fr; /* Mobile/Tablet pe single column */
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-question {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
